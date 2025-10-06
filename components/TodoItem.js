@@ -1,9 +1,9 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-const TodoItem = ({ text }) => {
+const TodoItem = ({ text, color }) => {
   return (
-    <View style={styles.item}>
+    <View style={[styles.item, { backgroundColor: color || '#f2f2f2' }] }>
       <Text style={styles.text}>{text}</Text>
     </View>
   );
